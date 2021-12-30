@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="H9t-As-d4X" customClass="TopBrandCell" customModule="EvalyDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H9t-As-d4X" id="6zO-Iq-XzY">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzC-5D-IjI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="228"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Brands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NQ-vz-FwC">
+                                <rect key="frame" x="16" y="16" width="120" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="CtT-Bs-Id5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="l8d-US-mhO" customClass="CustomCollectionView" customModule="EvalyDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="16" y="59" width="288" height="117"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rkM-bc-J2g">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-Hg-8Hq">
+                                <rect key="frame" x="16" y="184" width="288" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="8" maxX="40" maxY="8"/>
+                                <state key="normal" title="Load More Brands">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="l8d-US-mhO" secondAttribute="trailing" constant="16" id="8Ih-hr-uWC"/>
+                            <constraint firstItem="pRn-Hg-8Hq" firstAttribute="leading" secondItem="l8d-US-mhO" secondAttribute="leading" id="BBa-Rv-ZtO"/>
+                            <constraint firstItem="pRn-Hg-8Hq" firstAttribute="centerX" secondItem="l8d-US-mhO" secondAttribute="centerX" id="EGE-p5-jfj"/>
+                            <constraint firstItem="pRn-Hg-8Hq" firstAttribute="top" secondItem="l8d-US-mhO" secondAttribute="bottom" constant="8" symbolic="YES" id="GP2-ZN-LN5"/>
+                            <constraint firstItem="l8d-US-mhO" firstAttribute="top" secondItem="8NQ-vz-FwC" secondAttribute="bottom" constant="16" id="GTD-yZ-qaN"/>
+                            <constraint firstItem="8NQ-vz-FwC" firstAttribute="leading" secondItem="dzC-5D-IjI" secondAttribute="leading" constant="16" id="QMq-Js-S26"/>
+                            <constraint firstItem="pRn-Hg-8Hq" firstAttribute="trailing" secondItem="l8d-US-mhO" secondAttribute="trailing" id="Yzm-hN-TiH"/>
+                            <constraint firstItem="l8d-US-mhO" firstAttribute="leading" secondItem="8NQ-vz-FwC" secondAttribute="leading" id="gXc-ge-OrM"/>
+                            <constraint firstAttribute="bottom" secondItem="pRn-Hg-8Hq" secondAttribute="bottom" constant="8" id="jpI-Rj-Frh"/>
+                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="8NQ-vz-FwC" secondAttribute="trailing" constant="197" id="qdu-Rp-GTz"/>
+                            <constraint firstItem="8NQ-vz-FwC" firstAttribute="top" secondItem="dzC-5D-IjI" secondAttribute="top" constant="16" id="zv6-AZ-YqH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                <constraints>
+                    <constraint firstItem="dzC-5D-IjI" firstAttribute="top" secondItem="6zO-Iq-XzY" secondAttribute="top" id="KOO-2g-J4V"/>
+                    <constraint firstAttribute="trailing" secondItem="dzC-5D-IjI" secondAttribute="trailing" id="OEo-0y-Cto"/>
+                    <constraint firstAttribute="bottom" secondItem="dzC-5D-IjI" secondAttribute="bottom" id="ktV-ua-U0W"/>
+                    <constraint firstItem="dzC-5D-IjI" firstAttribute="leading" secondItem="6zO-Iq-XzY" secondAttribute="leading" id="m2O-Bo-bwG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="tqY-cJ-FVx"/>
+            <connections>
+                <outlet property="collectionView" destination="l8d-US-mhO" id="S5H-0h-A14"/>
+                <outlet property="loadMoreBtn" destination="pRn-Hg-8Hq" id="eJg-5F-Hv3"/>
+            </connections>
+            <point key="canvasLocation" x="102.89855072463769" y="106.13839285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="WelcomeCell" customModule="EvalyDemoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdh-fr-VbN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="mvL-b0-Owf">
+                                <rect key="frame" x="256" y="16" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="1jI-OQ-ubU"/>
+                                    <constraint firstAttribute="height" constant="48" id="6aT-p7-1aI"/>
+                                    <constraint firstAttribute="width" secondItem="mvL-b0-Owf" secondAttribute="height" multiplier="1:1" id="SbY-iO-Qlk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mvL-b0-Owf" secondAttribute="trailing" constant="16" id="7bJ-XY-85j"/>
+                            <constraint firstItem="mvL-b0-Owf" firstAttribute="centerY" secondItem="vdh-fr-VbN" secondAttribute="centerY" id="9Q0-Mm-sEs"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEW-sA-4m8">
+                        <rect key="frame" x="16" y="8" width="170" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="4a4-1u-rlc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaly Demo App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tpr-RF-IDE">
+                        <rect key="frame" x="16" y="29" width="170" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vdh-fr-VbN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Tg-nJ-zo2"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="dEW-sA-4m8" secondAttribute="trailing" constant="134" id="CiU-BR-Yp5"/>
+                    <constraint firstAttribute="bottom" secondItem="vdh-fr-VbN" secondAttribute="bottom" id="I4c-t3-hwG"/>
+                    <constraint firstItem="vdh-fr-VbN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ihr-X1-UH4"/>
+                    <constraint firstItem="dEW-sA-4m8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kse-Sl-71e"/>
+                    <constraint firstItem="Tpr-RF-IDE" firstAttribute="top" secondItem="dEW-sA-4m8" secondAttribute="bottom" id="TZA-3s-og6"/>
+                    <constraint firstAttribute="trailing" secondItem="vdh-fr-VbN" secondAttribute="trailing" id="UN7-78-Vz3"/>
+                    <constraint firstAttribute="bottom" secondItem="Tpr-RF-IDE" secondAttribute="bottom" constant="16" id="czf-vS-kkm"/>
+                    <constraint firstItem="Tpr-RF-IDE" firstAttribute="leading" secondItem="dEW-sA-4m8" secondAttribute="leading" id="o0O-rQ-ltH"/>
+                    <constraint firstItem="Tpr-RF-IDE" firstAttribute="trailing" secondItem="dEW-sA-4m8" secondAttribute="trailing" id="vFo-Hp-Oqw"/>
+                    <constraint firstItem="dEW-sA-4m8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="y7p-ty-WUx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user" width="384" height="384"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
